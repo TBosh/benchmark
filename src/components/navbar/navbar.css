@@ -1,0 +1,50 @@
+@import url("../../font-awesome/css/font-awesome.css");
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+.logo {
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+.header {
+  height: 100px;
+  width: 100%;
+  background-color:#AAAD9C;
+}
+
+.menu-icon {
+  color: #5E5841;
+  float: right;
+  padding: 10px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.menu {
+  justify-content: left;
+  height: 450px;
+  width: 100vw;
+  background: #daccb2;
+  padding: 10px;
+  padding-top: 75px;
+  position: absolute;
+  top: 0;
+}
+.menu-text {
+  font-size: 30px;
+  color: #5E5841;
+  padding: 5px;
+  text-align: right;
+  display: block;
+}
+.background {
+}
+
+
