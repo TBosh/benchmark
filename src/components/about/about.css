@@ -1,0 +1,7 @@
+
+.map {
+  background-image: url("../../media/11x13_Barber_Map.svg");
+  height: 400px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

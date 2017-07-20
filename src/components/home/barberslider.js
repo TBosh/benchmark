@@ -4,7 +4,7 @@ import './barberslider.css'
 import { Link } from "react-router-dom";
 import aboutbackground from "../../media/aboutbackground.jpg";
 import barber from "../../media/barber.jpg";
-import zionbackground from "../../media/zionbackground.jpg";
+import zionbackground from "../../media/store.jpg";
 
 class BarberSlider extends Component {
   render() {
@@ -15,7 +15,8 @@ class BarberSlider extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 3000,
+      autoplaySpeed: 2000,
+      arrows: false,
     };
     return (
       <div className="barber-caro">

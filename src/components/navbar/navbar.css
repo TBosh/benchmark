@@ -29,13 +29,15 @@ a {
 
 .menu {
   justify-content: left;
-  height: 450px;
-  width: 100vw;
+  width: 80vw;
   background: #daccb2;
   padding: 10px;
   padding-top: 75px;
   position: absolute;
   top: 0;
+  right: 0;
+  border-bottom-left-radius: 10px;
+  box-shadow: -10px 10px 30px rgba(0, 0, 0, .7);
 }
 .menu-text {
   font-size: 30px;
@@ -44,7 +46,11 @@ a {
   text-align: right;
   display: block;
 }
-.background {
-}
 
+/*.background-open-menu {
+  background-color: rgba(0, 0, 0, .6);
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+}*/
 

@@ -1,15 +1,70 @@
 body {
   background-color: #DACCB2;
 }
-
+.intro {
+  width: 100%;
+  height: 20%;
+  color: #DACCB2;
+  background: #5E5841;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  word-break: break-word;
+}
 .profile {
-  
+  width: 100%;
+  height: 40vh;
+  background: #5E5841;
 }
 
-.barber-caro {
-  height: 400px;
+.prof1 {
   width: 100%;
-  position: relative;
+  background-image: url("../../media/DaynaProfile.jpg");
+  height: 100%;
+  content: inherit;
+  background-size: cover;
+}
+
+.prof2 {
+  width: 100%;
+  background-image: url("../../media/JimProfile.jpg");
+  height: 100%;
+  content: inherit;
+  background-size: cover;
+}
+.profGradientRight {
+  width: 100%;
+  height: 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+0,000000+100&0+24,0.7+75 */
+  background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 24%, rgba(0,0,0,0.7) 75%, rgba(0,0,0,0.7) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 24%,rgba(0,0,0,0.7) 75%,rgba(0,0,0,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 24%,rgba(0,0,0,0.7) 75%,rgba(0,0,0,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#b3000000',GradientType=1 ); /* IE6-9 */
+}
+
+.profGradientLeft {
+  width: 100%;
+  height: 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100,000000+100&0.7+25,0+76 */
+  background: -moz-linear-gradient(left, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 25%, rgba(0,0,0,0) 76%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 25%,rgba(0,0,0,0) 76%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 25%,rgba(0,0,0,0) 76%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+
+.textRight {
+  float: right;
+  color: #DACCB2;
+  /*padding-right: 20px;*/
+  width: 50%;
+  padding-top: 10px;
+}
+
+.textLeft {
+  float: left;
+  color: #DACCB2;
+  /*padding-left: 20px;*/
+  width: 50%;
+  padding-top: 10px;
 }
 
 .barber-img {
@@ -40,6 +95,16 @@ body {
 }
 
 .barberButton:hover {
-  font-size: 120%;
+  font-size: 105%;
 
+}
+
+.socialLinks {
+  justify-content: space-around;
+  display: flex;
+}
+
+.icons {
+  color: #DACCB2;
+  padding: 4px;
 }

@@ -3,13 +3,14 @@
   src: url('../../fonts/OratorSTD.otf') format ("opentype");
 } 
   */
-@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400,700,800,900');
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
+@import url("../../font-awesome/css/font-awesome.css");
 
 
 .background-img {
-  background-image: url("../../media/aboutbackground.jpg");
+  background-image: url("../../media/barberlantern.svg");
   height: 400px;
   background-size: cover;
 }
@@ -20,13 +21,27 @@ p {
   font-family: 'Varela Round', sans-serif;
   text-align: center;
 }
+
+.textFix {
+  text-decoration: none;
+  padding: 20px;
+  word-break: break-word;
+}
+
+h2 {
+  margin: 0px;
+  text-align: center;
+}
 h3 {
   margin: 0px;
   word-break: break-word;
-  font-family: 'varela round', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
   text-align: center;
 }
-
+.waypoint {
+  font-family: 'Libre Franklin', sans-serif;
+  font-style: bold;
+}
 .prices {
   background: #DACCB2;
   width: 100%;
@@ -41,9 +56,12 @@ h3 {
 .hours {
   background: #333E48;
   width: 100%;
+  height: 285px;
   color: #DACCB2;
   padding-bottom: 20px;
   padding-top: 20px;
+  position: relative;
+  
 }
 
 .barbers {
@@ -56,4 +74,60 @@ h3 {
 .barber-caro {
   height: 400px;
   width: 100%;
+}
+
+.bookingButtonBack {
+    background-color: black;
+    opacity: .4;
+}
+.bookingButton {
+  width: 200px;
+  height: 50px;
+  color: #DACCB2;
+  position: absolute;
+  top: 76%;
+  left: 50%;
+  border-color: #DACCB2;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 30px;
+  transform: translate(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookingButton:hover {
+  font-size: 105%;
+
+}
+
+.contact {
+  background: #333E48;
+  width: 100%;
+  height: 285px;
+  color: #DACCB2;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  position: relative;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.contactLinks {
+  justify-content: space-around;
+  display: flex;
+  padding-top: 10px;
+}
+
+.icons {
+  color: #DACCB2;
+  padding: 20px;
+}
+
+.framer {
+  max-width: 90vw;
+}
+
+.following {
+  padding-top: 20px;
 }
