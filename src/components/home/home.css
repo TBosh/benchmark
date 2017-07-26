@@ -1,31 +1,42 @@
 /*@font-face {
   font-family: Orator;
-  src: url('../../fonts/OratorSTD.otf') format ("opentype");
-} 
-  */
+  src: url('../../fonts/OratorSTD.ttf') format ("opentype");
+} */
+  
 @import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400,700,800,900');
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 @import url("../../font-awesome/css/font-awesome.css");
+@import url('https://fonts.googleapis.com/css?family=Oxygen+Mono');
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono');
+
 
 
 .background-img {
-  background-image: url("../../media/barberlantern.svg");
+  background-image: url("../../media/WEB_TAGLINE_ORATOR.svg");
   height: 400px;
   background-size: cover;
+  background: grey;
 }
 
 p {
+  
+}
+
+.text-pad-p {
   margin: 0px;
   word-break: break-word;
-  font-family: 'Varela Round', sans-serif;
+  /*font-family: 'Oxygen Mono', monospace;*/
+  font-family: 'Cutive Mono', monospace;
   text-align: center;
+  font-size: larger;
 }
 
 .textFix {
   text-decoration: none;
   padding: 20px;
   word-break: break-word;
+  color: #DACCB2;
 }
 
 h2 {
@@ -35,11 +46,13 @@ h2 {
 h3 {
   margin: 0px;
   word-break: break-word;
-  font-family: 'Libre Franklin', sans-serif;
+  /*font-family: 'Oxygen Mono', monospace;*/
+  font-family: 'Cutive Mono', monospace;
   text-align: center;
 }
 .waypoint {
-  font-family: 'Libre Franklin', sans-serif;
+  /*font-family: 'Oxygen Mono', monospace;*/
+  font-family: 'Cutive Mono', monospace;
   font-style: bold;
 }
 .prices {
@@ -56,7 +69,7 @@ h3 {
 .hours {
   background: #333E48;
   width: 100%;
-  height: 285px;
+  height: 235px;
   color: #DACCB2;
   padding-bottom: 20px;
   padding-top: 20px;
@@ -79,13 +92,14 @@ h3 {
 .bookingButtonBack {
     background-color: black;
     opacity: .4;
+    
 }
 .bookingButton {
   width: 200px;
   height: 50px;
   color: #DACCB2;
   position: absolute;
-  top: 76%;
+  top: 72%;
   left: 50%;
   border-color: #DACCB2;
   border-width: 1px;
@@ -105,12 +119,10 @@ h3 {
 .contact {
   background: #333E48;
   width: 100%;
-  height: 285px;
   color: #DACCB2;
   padding-bottom: 20px;
-  padding-top: 20px;
   position: relative;
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Oxygen Mono', monospace;
 }
 
 .contactLinks {
@@ -130,4 +142,65 @@ h3 {
 
 .following {
   padding-top: 20px;
+}
+
+@media only screen and (max-width: 330px) {
+    .text-pad-p {
+      font-size: medium;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .mainCont {
+        padding-left: 15vw;
+        padding-right: 15vw;
+        background: white;
+        box-shadow: 10px 10px 5px grey;
+    }
+    .prices {
+        background: #DACCB2;
+        width: 50%;
+        height: 285px;
+        color: #333E48;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        float: left
+}
+    .hours {
+        background: #333E48;
+        width: 50%;
+        height: 285px;
+        color: #DACCB2;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        position: relative;
+        float: left;
+}
+    .barbers {
+      background: #DACCB2;
+      width: 100%;
+      height: 400px;
+      color: #333E48;
+    }
+
+    .barber-caro {
+      height: 400px;
+      width: 100%;
+      /*float: left; This breaks things*/ 
+    }
+    .following {
+      padding-top: 20px;
+      margin-left: 10%;
+      margin-right: 10%;
+}
+    .contactLinks {
+      justify-content: space-around;
+      display: flex;
+      padding-top: 10px;
+      margin-left: 20%;
+      margin-right: 20%;
+}
+    .slick-slider {
+      float: left;
+    }
 }

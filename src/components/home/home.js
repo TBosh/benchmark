@@ -11,33 +11,35 @@ class Home extends Component {
     
     return (
       
-    
-      <div>
+      <div className="mainCont">
+        <div> 
         <div className="background-img">
           <div className="waypoint">
-            <h2>The waypoint between a man's style and his next adventure</h2>
+            Benchmark Barbershop + Outpost is located 30 minutes from the entrance to Zion National Park. We are nestled in the red rocks of Washington, Utah just off I-15 and Highway 9. Our shop is a destination for those en route for a current adventure, whether it be a haircut or perhaps the perfect item for a personal carry bag. We are a grooming + gear resource for trail or travel bound clients. If you’re just coming off an excursion, stop in for a relaxing shave experience to clean up, hydrate and unwind. 
           </div>
         </div>
         <div className="hours">
           <h3 className="text-pad">HOURS</h3>
-          <p className="text-pad"> *********</p>
-          <p className="text-pad">TUESDAY-FRIDAY  9AM - 8PM</p>
-          <p className="text-pad">SATURDAY  10AM - 5PM</p>
-          <p className="text-pad"> *********</p>
-          <p className="text-pad"> APPOINTMENTS ENCOURAGED</p>
-          <Link to="/booking">
+          <p className="text-pad-p"> *********</p>
+          <p className="text-pad-p">TUESDAY-FRIDAY  9AM - 8PM</p>
+          <p className="text-pad-p">SATURDAY  10AM - 5PM</p>
+          <p className="text-pad-p"> *********</p>
+          <p className="text-pad-p"> APPOINTMENTS ENCOURAGED</p>
+          {/*<Link to="/booking">*/}
+          <a href='https://squareup.com/appointments/book/Y198W1RSEFMSW/tbi'>
             <div className="bookingButton bookingButtonBack"></div>
             <div className="bookingButton">Make an appointment</div>
-          </Link>
+          </a>
+          {/*</Link>*/}
 
         </div>
         <div className="prices">
           <h3 className="text-pad">PRICES</h3>
-          <p className="text-pad"> *********</p>
-          <p className="text-pad">GENTLEMAN'S CUT - $35</p>
-          <p className="text-pad">YOUNG GENTLEMAN'S CUT - $20</p>
-          <p className="text-pad">STRAIGHT-RAZOR SHAVE - $35</p>
-          <p className="text-pad">GENTLEMAN'S STEAM SHAVE - $45</p>      
+          <p className="text-pad-p"> *********</p>
+          <p className="text-pad-p">GENTLEMAN'S CUT - $35</p>
+          <p className="text-pad-p">YOUNG GENTLEMAN'S CUT - $20</p>
+          <p className="text-pad-p">STRAIGHT-RAZOR SHAVE - $35</p>
+          <p className="text-pad-p">GENTLEMAN'S STEAM SHAVE - $45</p>      
 
         </div>
         
@@ -53,7 +55,7 @@ class Home extends Component {
                 <a href="https://www.instagram.com/benchmark_barbershop/">
                   <i className="fa fa-instagram fa-3x icons" aria-hidden="true" ></i>
                 </a>
-                <a href="https://www.facebook.com/">
+                <a href="https://www.facebook.com/Benchmark-Barbershop-532168320314286/">
                 <i className="fa fa-facebook fa-3x icons" aria-hidden="true"></i>
                 </a>
                 <a href="https://www.plus.google.com/">
@@ -70,7 +72,7 @@ class Home extends Component {
           </div>
         </div>
       </div>
-     
+    </div>
     );
   }
 }

@@ -1,7 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono');
+
 
 .map {
   background-image: url("../../media/11x13_Barber_Map.svg");
   height: 400px;
   background-size: contain;
   background-repeat: no-repeat;
+}
+.about-logo {
+  background-image: url('../../media/PlateLogo.svg');
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.main-box {
+  padding: 10px; 
+}
+.text-logo {
+  background-color: red;
+  height: 200px;
+  width: 200px;
+  display: flex; 
+  float: left;
+}
+
+.wording {
+  text-align: left;
+  word-break: break-word;
+  font-family: 'Cutive Mono', monospace;
+  font-size: larger;
+  padding: 10px 30px 10px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 420px) {
+  
+  .text-logo {
+    background-color: red;
+    height: 150px;
+    width: 150px;
+    display: flex; 
+    float: left;
+    margin-right: 10px;
+}
+  .wording {
+    display: initial;
+  }
 }

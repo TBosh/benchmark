@@ -6,6 +6,8 @@ import Home from './components/home/home.js';
 import About from './components/about/about.js';
 import Barbers from './components/barbers/barbers.js';
 import Store from './components/store/store.js';
+import Booking from './components/booking/booking.js';
+import Ourwork from './components/ourwork/ourwork.js';
 
 
 export default (
@@ -14,5 +16,7 @@ export default (
         <Route component={ About } path="/About" />
         <Route component={ Barbers } path="/Barbers" />
         <Route component={ Store } path="/Store" />
+        <Route component={ Booking } path="/Booking" />
+        <Route component={ Ourwork } path="/Ourwork" />
     </Switch>
 )

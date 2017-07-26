@@ -9,7 +9,7 @@ class Barbers extends Component {
     return (
       <div>
       <div className="intro">
-        <h3>All of us are fully certified barbers yada yada commited to excellence, yada yada intro. This font is ugly.
+        <h3>All of us are fully certified barbers yada yada commited to excellence, yada yada intro.
         </h3>
       </div>
       <div className="profile">
