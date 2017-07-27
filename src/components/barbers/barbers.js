@@ -1,9 +1,24 @@
 import React, { Component } from 'react';
-import './barbers.css'
+import './barbers.css';
+import axios from 'axios';
 
 class Barbers extends Component {
+
+  constructor() {
+    super();
+
+    this.state = {
+      barbers: []
+    }
+  }
   componentDidMount() {
     window.scrollTo(0,0);
+    axios.get('/api/barbers')
+    .then( (response) => {
+      this.setState({
+        barbers: response.data
+      });
+    })
   }
   render() {
     return (
@@ -13,6 +28,25 @@ class Barbers extends Component {
         </h3>
       </div>
       <div className="profile">
+        {this.state.barbers.map( (elem, index, array) => {
+          console.log(elem);
+          return(
+            <div>
+            <h2>{elem.name}</h2>
+            <p>{elem.bio}</p>
+              {elem.socials.map( (elem, index, array) => {
+                return(
+                  <div>
+                    <a href={elem.link}>
+                    <i className={`fa fa-${elem.type} fa-2x icons`} aria-hidden="true"></i>
+                    </a>
+                    {elem.type}
+                    
+                </div>)
+              })}
+            </div>
+          )
+        }) }
         <div className="prof1">
           <div className="profGradientRight">
             <div className="textRight">

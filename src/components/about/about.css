@@ -19,11 +19,12 @@
   padding: 10px; 
 }
 .text-logo {
-  background-color: red;
+  background-image: url('../../media/PlateLogo.svg');
   height: 200px;
   width: 200px;
   display: flex; 
   float: left;
+  background-size: contain;
 }
 
 .wording {
@@ -31,15 +32,12 @@
   word-break: break-word;
   font-family: 'Cutive Mono', monospace;
   font-size: larger;
-  padding: 10px 30px 10px 30px;
-  display: flex;
   flex-direction: column;
 }
 
 @media only screen and (max-width: 420px) {
   
   .text-logo {
-    background-color: red;
     height: 150px;
     width: 150px;
     display: flex; 

@@ -1,0 +1,1 @@
+select * from socials where barberid = $1

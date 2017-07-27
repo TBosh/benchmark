@@ -21,9 +21,9 @@ class BarberSlider extends Component {
     return (
       <div className="barber-caro">
         <Slider {...settings}>
-          <div><h3></h3><img className="barber-img" src={aboutbackground} alt=""/></div>
-          <div><img className="barber-img" src={barber} alt=""/><h3></h3></div>
-          <div><img className="barber-img" src={zionbackground} alt=""/><h3></h3></div>
+          <div><img className="barber-img" src={aboutbackground} alt=""/></div>
+          <div><img className="barber-img" src={barber} alt=""/></div>
+          <div><img className="barber-img" src={zionbackground} alt=""/></div>
         </Slider>
         <Link to="/barbers">
           <div className="barberButton barberButtonBack"></div>

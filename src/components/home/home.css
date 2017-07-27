@@ -13,10 +13,9 @@
 
 
 .background-img {
-  background-image: url("../../media/WEB_TAGLINE_ORATOR.svg");
-  height: 400px;
+  background-image: url("../../media/backgroundsmall.jpeg");
+  height: 85vh;
   background-size: cover;
-  background: grey;
 }
 
 p {
@@ -53,7 +52,8 @@ h3 {
 .waypoint {
   /*font-family: 'Oxygen Mono', monospace;*/
   font-family: 'Cutive Mono', monospace;
-  font-style: bold;
+  padding: 10px;
+  font-size: larger;
 }
 .prices {
   background: #DACCB2;
@@ -144,13 +144,27 @@ h3 {
   padding-top: 20px;
 }
 
+
+@media only screen and (max-width: 365px) {
+    
+    .waypoint {
+      font-size: large;
+    }
+}
 @media only screen and (max-width: 330px) {
     .text-pad-p {
+      font-size: medium;
+    }
+    .waypoint {
       font-size: medium;
     }
 }
 
 @media only screen and (min-width: 500px) {
+    .background-img-big {
+        background-image: url("../../media/zion-map.jpg");
+        background-size: cover;
+    }
     .mainCont {
         padding-left: 15vw;
         padding-right: 15vw;
@@ -186,7 +200,7 @@ h3 {
     .barber-caro {
       height: 400px;
       width: 100%;
-      /*float: left; This breaks things*/ 
+      clear: both;
     }
     .following {
       padding-top: 20px;
@@ -201,6 +215,6 @@ h3 {
       margin-right: 20%;
 }
     .slick-slider {
-      float: left;
+      /*float: left;*/
     }
 }

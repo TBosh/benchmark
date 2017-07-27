@@ -11,7 +11,7 @@ class Home extends Component {
     
     return (
       
-      <div className="mainCont">
+      <div className="mainCont background-img-big">
         <div> 
         <div className="background-img">
           <div className="waypoint">
@@ -36,10 +36,16 @@ class Home extends Component {
         <div className="prices">
           <h3 className="text-pad">PRICES</h3>
           <p className="text-pad-p"> *********</p>
-          <p className="text-pad-p">GENTLEMAN'S CUT - $35</p>
-          <p className="text-pad-p">YOUNG GENTLEMAN'S CUT - $20</p>
-          <p className="text-pad-p">STRAIGHT-RAZOR SHAVE - $35</p>
-          <p className="text-pad-p">GENTLEMAN'S STEAM SHAVE - $45</p>      
+          <p className="text-pad-p">Men's Haircut - $35</p>
+          <p className="text-pad-p">Boy's Haircut - $25</p>
+          <p className="text-pad-p">Beard Grooming - $15/$25</p>
+          <p className="text-pad-p">Benchmark Face Shave - $35</p>
+          <p className="text-pad-p">Benchmark Field Shave - $45</p>
+          <p className="text-pad-p"> *********</p>
+          <p className="text-pad-p">Buzzcut (One Length) - $15</p>
+          <p className="text-pad-p">Hair Washing - $5</p>
+          <p className="text-pad-p">Neck Clean-Up - $10</p>
+
 
         </div>
         

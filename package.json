@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "animate.css": "^3.5.2",
+    "axios": "^0.16.2",
     "body-parser": "^1.17.2",
     "cors": "^2.8.4",
     "express": "^4.15.3",
@@ -16,6 +17,8 @@
     "react-slick": "^0.14.11",
     "slick-carousel": "^1.6.0"
   },
+  "proxy": "http://localhost:3001",
+  
   "devDependencies": {
     "react-scripts": "1.0.10"
   },
