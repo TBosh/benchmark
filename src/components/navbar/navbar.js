@@ -36,7 +36,10 @@ class Navbar extends Component {
                     <a className="menu-text">Home</a>
                   </Link>
                   <Link to="/about"  onClick={this.toggleMenu} >
-                    <a className="menu-text">The Shop</a>
+                    <a className="menu-text">About Us</a>
+                  </Link>
+                  <Link to="/services"  onClick={this.toggleMenu} >
+                    <a className="menu-text">Services</a>
                   </Link>
                   <Link to="/barbers"  onClick={this.toggleMenu} >
                     <a className="menu-text">Barbers</a>
@@ -44,21 +47,18 @@ class Navbar extends Component {
 
                   <a className="menu-text" href='https://squareup.com/appointments/book/Y198W1RSEFMSW/tbi'>Booking</a>
                   
-                  <Link to="/store" onClick={this.toggleMenu} >
+                  {/*<Link to="/store" onClick={this.toggleMenu} >
                     <a className="menu-text">Store</a>
-                  </Link>
+                  </Link>*/}
                   <Link to="/members"  onClick={this.toggleMenu} >
                     <a className="menu-text">Members</a>
                   </Link>
-                  <Link to="/news"  onClick={this.toggleMenu} >
-                    <a className="menu-text">News</a>
-                  </Link>
-                  <Link to="/our_work"  onClick={this.toggleMenu} >
+                  {/*<Link to="/our_work"  onClick={this.toggleMenu} >
                     <a className="menu-text">Our Work</a>
                   </Link>
                   <Link to="/contact"  onClick={this.toggleMenu} >
                     <a className="menu-text">Contact</a>
-                  </Link>
+                  </Link>*/}
                 </div>
               </div>
             </div>) : (

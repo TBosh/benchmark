@@ -1,22 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Cutive+Mono');
+@import url('https://fonts.googleapis.com/css?family=Oswald:500,600');
 
-
-.map {
-  background-image: url("../../media/11x13_Barber_Map.svg");
-  height: 400px;
-  background-size: contain;
-  background-repeat: no-repeat;
+h3{
+  font-family: 'Oswald', sans-serif;
 }
-.about-logo {
-  background-image: url('../../media/PlateLogo.svg');
-  height: 100px;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-}
-
-.main-box {
-  padding: 10px; 
+.Shopmain-box {
+  padding: 10px;
+  
 }
 .text-logo {
   background-image: url('../../media/PlateLogo.svg');
@@ -27,12 +17,14 @@
   background-size: contain;
 }
 
-.wording {
+.ShopWording {
   text-align: left;
   word-break: break-word;
-  font-family: 'Cutive Mono', monospace;
+  /*font-family: 'Cutive Mono', monospace;*/
+  font-family: 'Oswald', sans-serif;
   font-size: larger;
   flex-direction: column;
+  color: #5E5841;
 }
 
 @media only screen and (max-width: 420px) {
@@ -44,7 +36,49 @@
     float: left;
     margin-right: 10px;
 }
-  .wording {
+  .ShopWording {
     display: initial;
+    color: #5E5841;
   }
+}
+
+@media only screen and (min-width: 1100px) {
+    .background-img-big {
+        background-image: url("../../media/zion-map.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        height: 100vh;
+    }
+    .mainContShop {
+        padding-left: 15vw;
+        padding-right: 15vw;
+        box-shadow: 10px 10px 5px grey;
+        padding-top: 15vh;
+    }
+    .ShopWording {
+      display: initial;
+      color: #DACCB2; 
+    }
+    .ShopWording {
+      display: initial;
+      color: #DACCB2; 
+          padding-top: 10px;
+    padding-bottom: 10px;
+    }
+
+    .Shopmain-box {
+      padding: 10px;
+      background: #333E48; 
+      color: #DACCB2;
+      min-height: 275px;
+    }
+    .text-logo {
+      background-image: url('../../media/PlateLogo.svg');
+      height: 200px;
+      width: 200px;
+      display: flex; 
+      float: left;
+      background-size: contain;
+      margin: 29px;
+    }
 }

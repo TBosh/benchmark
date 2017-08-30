@@ -2,27 +2,30 @@ import React, { Component } from 'react';
 import './home.css';
 import BarberSlider from './barberslider.js';
 import { Link } from "react-router-dom";
-
+import arrow from '../../media/down_arrow.png'
 
 
 
 class Home extends Component {
+  componentDidMount() {
+    window.scrollTo(0,0);
+  }
   render() {
     
     return (
       
       <div className="mainCont background-img-big">
-        <div> 
+         
         <div className="background-img">
           <div className="waypoint">
             Benchmark Barbershop + Outpost is located 30 minutes from the entrance to Zion National Park. We are nestled in the red rocks of Washington, Utah just off I-15 and Highway 9. Our shop is a destination for those en route for a current adventure, whether it be a haircut or perhaps the perfect item for a personal carry bag. We are a grooming + gear resource for trail or travel bound clients. If you’re just coming off an excursion, stop in for a relaxing shave experience to clean up, hydrate and unwind. 
           </div>
+          {/*<img className="arrow" src={arrow} alt=""/>*/}
         </div>
         <div className="hours">
           <h3 className="text-pad">HOURS</h3>
           <p className="text-pad-p"> *********</p>
-          <p className="text-pad-p">TUESDAY-FRIDAY  9AM - 8PM</p>
-          <p className="text-pad-p">SATURDAY  10AM - 5PM</p>
+          <p className="text-pad-p">MONDAY-FRIDAY  10AM - 6PM</p>
           <p className="text-pad-p"> *********</p>
           <p className="text-pad-p"> APPOINTMENTS ENCOURAGED</p>
           {/*<Link to="/booking">*/}
@@ -34,18 +37,23 @@ class Home extends Component {
 
         </div>
         <div className="prices">
-          <h3 className="text-pad">PRICES</h3>
+          <h3 className="text-pad">SERVICES</h3>
           <p className="text-pad-p"> *********</p>
-          <p className="text-pad-p">Men's Haircut - $35</p>
-          <p className="text-pad-p">Boy's Haircut - $25</p>
+          <p className="text-pad-p">Men's Haircut - $25</p>
+          <p className="text-pad-p">Boy's Haircut - $20</p>
           <p className="text-pad-p">Beard Grooming - $15/$25</p>
           <p className="text-pad-p">Benchmark Face Shave - $35</p>
           <p className="text-pad-p">Benchmark Field Shave - $45</p>
-          <p className="text-pad-p"> *********</p>
-          <p className="text-pad-p">Buzzcut (One Length) - $15</p>
+          {/*<p className="text-pad-p"> *********</p>*/}
+          {/*<p className="text-pad-p">Buzzcut (One Length) - $15</p>
           <p className="text-pad-p">Hair Washing - $5</p>
-          <p className="text-pad-p">Neck Clean-Up - $10</p>
-
+          <p className="text-pad-p">Neck Clean-Up - $10</p>*/}
+          <Link to="/services">
+            {/*<a href='https://squareup.com/appointments/book/Y198W1RSEFMSW/tbi'>*/}
+              <div className="servicesButton servicesButtonBack"></div>
+              <div className="servicesButton">Full list of Services</div>
+            {/*</a>*/}
+          </Link>
 
         </div>
         
@@ -67,17 +75,17 @@ class Home extends Component {
                 <a href="https://www.plus.google.com/">
                 <i className="fa fa-google fa-3x icons" aria-hidden="true"></i>
                 </a>
-                <a href="https://www.twitter.com/">
-                <i className="fa fa-twitter fa-3x icons" aria-hidden="true"></i>
+                <a href="tel:1-801-709-9645">
+                <i className="fa fa-phone fa-3x icons" aria-hidden="true"></i>
                 </a>
+              </div>
                 {/*<div className="framer">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1589.8093480351151!2d-113.44815469597884!3d37.16176519615734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ca593157edfd93%3A0x1626a7c642d7ba1!2s104+N+Coral+Canyon+Blvd%2C+Washington%2C+UT+84780!5e0!3m2!1sen!2sus!4v1500505201256" width="400" height="300"></iframe>
                 </div>*/}
-              </div>
             </div>
           </div>
         </div>
-      </div>
+      
     </div>
     );
   }

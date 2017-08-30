@@ -24,30 +24,35 @@ class Barbers extends Component {
     return (
       <div>
       <div className="intro">
-        <h3>All of us are fully certified barbers yada yada commited to excellence, yada yada intro.
+        <h3>All of us are fully certified barbers commited to excellence, yada yada yada intro.
         </h3>
       </div>
-      <div className="profile">
+      <div className="background-img-big-barb">
         {this.state.barbers.map( (elem, index, array) => {
           console.log(elem);
           return(
-            <div>
-            <h2>{elem.name}</h2>
-            <p>{elem.bio}</p>
-              {elem.socials.map( (elem, index, array) => {
-                return(
-                  <div>
-                    <a href={elem.link}>
-                    <i className={`fa fa-${elem.type} fa-2x icons`} aria-hidden="true"></i>
-                    </a>
-                    {elem.type}
-                    
-                </div>)
-              })}
+            <div className="profileHolder">
+              <img className="profile" src={elem.photo} alt=""/>
+              <div className="text_stuff">
+                <h2>{elem.name}</h2>
+                <p>{elem.bio}</p>
+                <div className="socialsParent">
+                  {elem.socials.map( (elem, index, array) => {
+                    return(
+                      <div>
+                        <a href={elem.link}>
+                        <i className={`fa fa-${elem.type} fa-2x barber_icons`} aria-hidden="true"></i>
+                        </a>
+                        
+                        
+                    </div>)
+                  })}
+                  </div>
+              </div>
             </div>
           )
         }) }
-        <div className="prof1">
+        {/*<div className="prof1">
           <div className="profGradientRight">
             <div className="textRight">
               <h2>Jim Bobbington</h2>
@@ -91,10 +96,10 @@ class Barbers extends Component {
             </div>
           </div>
         </div>
-        <div className="prof1">
+        <div className="prof3">
           <div className="profGradientRight">
             <div className="textRight">
-              <h2>Jim Bobbington</h2>
+              <h2>Ice Cube</h2>
               <p>Bio bio blah blah</p>
               <div className="socialLinks">
                 <a href="https://www.instagram.com/benchmark_barbershop/">
@@ -112,7 +117,7 @@ class Barbers extends Component {
               </div>
             </div>
           </div>
-        </div>
+        </div>*/}
       </div>
       </div>
     );

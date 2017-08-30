@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono');
+
+
+.contactmain-box {
+  padding: 10px;
+  margin: auto;
+}
+
+.contactWording {
+  text-align: left;
+  word-break: break-word;
+  font-family: 'Cutive Mono', monospace;
+  font-size: larger;
+  flex-direction: column;
+  color: #5E5841;
+}
+
+
+@media only screen and (max-width: 420px) {
+  
+  .contactWording {
+    display: initial;
+    color: #5E5841;
+  }
+  .contactIcons {
+    color: #5E5841
+  }
+  .contactLinksMarg {
+      margin-top: 30px;
+      justify-content: space-around;
+      display: flex;
+      /*margin-right: 20%;
+      margin-left: 20%;*/
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .background-img-big {
+        background-image: url("../../media/zion-map.jpg");
+        background-size: cover;
+        /*background-attachment: fixed;*/
+        height: 100vh;
+    }
+    .mainContContact {
+        padding-left: 15vw;
+        padding-right: 15vw;
+        box-shadow: 10px 10px 5px grey;
+        padding-top: 15vh;
+    }
+    .contactWording {
+      display: initial;
+      color: #DACCB2; 
+    }
+    .contactWording {
+      display: initial;
+      color: #DACCB2; 
+      
+    }
+    .contactIcons {
+      color: #DACCB2;
+    }
+
+    .contactmain-box {
+      padding: 30px;
+      background: #333E48; 
+      color: #DACCB2;
+      text-align: center;
+    }
+    .framer {
+      margin: 20px;
+    display: flex;
+    justify-content: center;
+    }
+    .contactLinksMarg {
+      margin-top: 30px;
+      justify-content: space-around;
+      display: flex;
+          margin-right: 20%;
+    margin-left: 20%;
+    }
+}

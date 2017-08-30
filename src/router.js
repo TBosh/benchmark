@@ -8,6 +8,8 @@ import Barbers from './components/barbers/barbers.js';
 import Store from './components/store/store.js';
 import Booking from './components/booking/booking.js';
 import Ourwork from './components/ourwork/ourwork.js';
+import Services from './components/services/services.js';
+import Contact from './components/contact/contact.js';
 
 
 export default (
@@ -18,5 +20,7 @@ export default (
         <Route component={ Store } path="/Store" />
         <Route component={ Booking } path="/Booking" />
         <Route component={ Ourwork } path="/Ourwork" />
+        <Route component={ Services } path="/Services" />
+        <Route component={ Contact } path="/Contact" />
     </Switch>
 )
